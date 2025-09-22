@@ -13,7 +13,7 @@ const Index = () => {
             Novikov Group
           </div>
           <nav className="hidden md:flex space-x-8">
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">О нас</a>
+            <a href="#about" className="text-foreground hover:text-primary transition-colors">О компании</a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
             <a href="#advantages" className="text-foreground hover:text-primary transition-colors">Преимущества</a>
             <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
@@ -66,16 +66,31 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-foreground mb-8">
-              О нас
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              С 10-летним опытом на рынке, Novikov Group предлагает услуги по ремонту под ключ, 
-              которые превратят ваше пространство в идеальное место для жизни. Мы понимаем, 
-              что ремонт — это важный шаг, и наша задача — сделать его максимально комфортным для вас. 
-              Доверяя нам, вы можете быть уверены в высоком качестве работы и внимании к деталям.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-foreground mb-8">
+                О компании
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
+                С 10-летним опытом на рынке, Novikov Group предлагает услуги по ремонту под ключ, 
+                которые превратят ваше пространство в идеальное место для жизни.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Мы понимаем, что ремонт — это важный шаг, и наша задача — сделать его максимально 
+                комфортным для вас. Доверяя нам, вы можете быть уверены в высоком качестве работы 
+                и внимании к деталям.
+              </p>
+            </div>
+            <div className="animate-scale-in">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://cdn.poehali.dev/files/391d0ccf-4ba3-4b9b-8ca6-35b5fff7990a.jpg" 
+                  alt="Команда Novikov Group" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
